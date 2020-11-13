@@ -13,3 +13,10 @@ export function user (data) {
     data
   })
 }
+export function login (data) { 
+	return new request().requestAll({
+	  url: '/login',
+	  method: 'get',
+	  data
+	})
+  }
